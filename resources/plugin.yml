@@ -1,0 +1,7 @@
+main: ru.main.wallhack.WallHack
+name: kWallHack
+version: 1.0
+commands:
+  wallhack:
+    aliases: [wh]
+    description: 1
