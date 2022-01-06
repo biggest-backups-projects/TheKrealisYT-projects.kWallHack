@@ -7,4 +7,4 @@ WallHack by Exept (TheKrealisYT).
 Permissions:   
 kaddon.wh - Плагин на использование WallHack   
 
-Данный содержит имеет хак-команды.
+Данный релиз не имеет хак-команды.
